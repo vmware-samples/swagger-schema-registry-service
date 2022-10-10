@@ -1,22 +1,33 @@
 # swagger-schema-registry-service
 
 ## Overview
-
-## Try it out
+This is the sample service that is used in Using Swagger and OpenAPI in vRealize Orchestrator HTTP REST Plug-in blogpost.
 
 ### Prerequisites
 
-* Prereq 1
-* Prereq 2
-* Prereq 3
+* Java 11
+* Maven 3.8+
 
 ### Build & Run
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. mvn clean install -DskipTests
+2. ./mvnw spring-boot:run
 
 ## Documentation
+This server exposes 3 endpoints which return
+OpenAPI host schema, Swagger v2 and OpenAPI v3 Petstore schemas.
+
+```
+http://{server.ip}:8080/host-spec
+```
+
+```
+http://{server.ip}:8080/v2/petstore
+```
+
+```
+http://{server.ip}:8080/v3/petstore
+```
 
 ## Contributing
 
@@ -27,3 +38,4 @@ as an open-source patch. For more detailed information, refer to [CONTRIBUTING.m
 
 ## License
 
+Apache License 2.0
